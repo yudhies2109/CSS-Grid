@@ -23,11 +23,13 @@ header {
     padding: 40px 0;
 }
 
+/* ---------> Clear float */
 .content::after {
     content: '';
     display: block;
     clear: both;
 }
+/* Clear Float <------- */
 
 .sidebar {
     float: left;
