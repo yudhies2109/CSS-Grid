@@ -1,0 +1,34 @@
+/* 
+
+grid-area : shorthand urutannya
+
+"row-start, column-start, row-end, column-end"
+
+*/
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    /* grid-template-columns: minmax(200px, 300px)
+    1fr 1fr;
+    grid-template-rows: repeat(3, 100px); */
+
+    grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr
+    [tiga] 1fr [empat];
+    grid-template-rows: [baris1] 100px [baris2] 100px
+    [b-3] 100px [b4];
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-items {
+
+    grid-area: 2 / 1 / 4 / 3;
+
+    background-color: lightblue;
+}
